@@ -90,3 +90,36 @@
 .tags-wants > .tag:hover {
     background-color: #ffcc00;
 }
+
+@keyframes borderColorAnimation {
+    0% {
+        border-color: #0c2461;
+    }
+    25% {
+        border-color: #1e3799;
+    }
+    50% {
+        border-color: #4a69bd;
+    }
+    75% {
+        border-color: #6a89cc;
+    }
+    100% {
+        border-color: #82ccdd;
+    }
+}
+
+.avatar {
+    border: 5px solid midnightblue;
+    animation-name: borderColorAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.page {
+    animation-name: borderColorAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
