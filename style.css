@@ -1,0 +1,192 @@
+.accordion-btn {
+    cursor: pointer;
+}
+
+.hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.hidden-content-active {
+    max-height: 500px;
+}
+
+.fa-chevron-down {
+    transition: transform 0.2s ease;
+}
+
+.fa-chevron-down-active {
+    transform: rotate(-180deg);
+}
+
+.accordion-btn {
+    transition: all 0.2s ease;
+}
+
+.accordion-btn:hover {
+    color: midnightblue;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.instagram:hover {
+    color: #8a3ab9;
+}
+
+.avatar {
+    border-radius: 100px;
+    transition: all 0.2s ease;
+}
+
+.avatar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tags > .tag {
+    background-color: #e8e8e8;
+    border-radius: 0.28571429rem;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.78571429rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.6em;
+    padding: 0.5833em 0.833em;
+    transition: background 0.1s ease;
+}
+
+.tags > .tag:not(:last-child) {
+    margin-right: 0.5em;
+}
+
+.tag:hover {
+    background-color: #c5c5c5;
+}
+
+.tags-likes > .tag {
+    background-color: #fd4f7b;
+    color: #fff;
+}
+
+.tags-dislikes > .tag {
+    background-color: midnightblue;
+    color: #fff;
+}
+
+.tags-wants > .tag {
+    background-color: #f1c40f;
+    color: #fff;
+}
+
+.tags-likes > .tag:hover {
+    background-color: #e2486e;
+}
+
+.tags-wants > .tag:hover {
+    background-color: #ffcc00;
+}
+
+@keyframes borderColorAnimation {
+    0% {
+        border-color: #0c2461;
+    }
+    25% {
+        border-color: #1e3799;
+    }
+    50% {
+        border-color: #4a69bd;
+    }
+    75% {
+        border-color: #6a89cc;
+    }
+    100% {
+        border-color: #82ccdd;
+    }
+}
+
+@keyframes backgroundColorAnimation {
+    0% {
+        background-color: #0c2461;
+    }
+    25% {
+        background-color: #1e3799;
+    }
+    50% {
+        background-color: #4a69bd;
+    }
+    75% {
+        background-color: #6a89cc;
+    }
+    100% {
+        background-color: #82ccdd;
+    }
+}
+
+@keyframes moveCircle {
+    0% {
+        transform: translateY(0) translateZ(0);
+    }
+    100% {
+        transform: translateY(-75%) translateZ(0);
+    }
+}
+
+.avatar {
+    border: 5px solid midnightblue;
+    animation-name: borderColorAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.page {
+    animation-name: borderColorAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: midnightblue;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.circle1 {
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 18%;
+    animation: moveCircle 5s infinite alternate;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    top: 30%;
+    right: 16%;
+    animation: moveCircle 5s infinite alternate;
+}
+
+.circle3 {
+    width: 110px;
+    height: 110px;
+    top: 60%;
+    left: 16%;
+    animation: moveCircle 5s infinite alternate;
+}
+
+.circle4 {
+    width: 200px;
+    height: 200px;
+    top: 75%;
+    right: 16%;
+    animation: moveCircle 5s infinite alternate;
+}
