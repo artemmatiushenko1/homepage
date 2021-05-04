@@ -1,0 +1,47 @@
+.accordion-btn {
+    cursor: pointer;
+}
+
+.hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.hidden-content-active {
+    max-height: 500px;
+}
+
+.fa-chevron-down {
+    transition: transform 0.2s ease;
+}
+
+.fa-chevron-down-active {
+    transform: rotate(-180deg);
+}
+
+.accordion-btn {
+    transition: all 0.2s ease;
+}
+
+.accordion-btn:hover {
+    color: midnightblue;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.instagram:hover {
+    color: #8a3ab9;
+}
+
+.avatar {
+    border-radius: 100px;
+    transition: all 0.2s ease;
+}
+
+.avatar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
